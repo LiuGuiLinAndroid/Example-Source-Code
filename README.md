@@ -24,6 +24,18 @@
 
 ![这里写图片描述](http://img.blog.csdn.net/20160604233854533)
 
+##三.SimpleWeather
+
+>简单天气 | MPAndroidChart + Retrofit2.0 + Gson
+
+![预览](https://github.com/LiuGuiLinAndroid/SimpleWeather/blob/master/img/%E9%A2%84%E8%A7%88.png?raw=true)
+
+
+##四.TallyBook
+
+>给女朋友写的一个简单的sql的记账本
+
+![图片]()
 
 ####QQ群：555974449
 
