@@ -3,7 +3,7 @@
 
 >给女朋友写的一个简单的sql的记账本
 
-![图片]()
+![图片](https://github.com/LiuGuiLinAndroid/SimpleProject/blob/master/TallyBook/img/%E9%A2%84%E8%A7%88.gif)
 
 ####QQ群：555974449
 
