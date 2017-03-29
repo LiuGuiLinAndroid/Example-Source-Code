@@ -1,4 +1,4 @@
 # SimpleWeather
 简单天气 | MPAndroidChart + Retrofit2.0 + Gson
 
-![预览](https://github.com/LiuGuiLinAndroid/SimpleWeathers/blob/master/img/%E9%A2%84%E8%A7%88.png?raw=true)
+![预览](https://github.com/LiuGuiLinAndroid/SimpleProject/blob/master/SimpleWeathers/img/%E9%A2%84%E8%A7%88.png?raw=true)
