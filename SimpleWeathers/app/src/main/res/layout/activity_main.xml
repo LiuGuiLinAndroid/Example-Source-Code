@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--天气详情-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main"
+        android:orientation="vertical">
+
+        <!--顶部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--刷新按钮-->
+            <LinearLayout
+                android:id="@+id/llRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/ivRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_refresh_white" />
+
+                <TextView
+                    android:id="@+id/tvNowTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/standard_text_size" />
+
+            </LinearLayout>
+
+            <!--城市/更新时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:id="@+id/tvUpdateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/standard_text_size" />
+
+            </LinearLayout>
+
+            <!--农历/星期-->
+            <TextView
+                android:id="@+id/tvWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="---- | ----"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/standard_text_size" />
+
+        </LinearLayout>
+
+        <!--中间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivWeatherIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="----"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/jumbo_text_size"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size" />
+
+        </LinearLayout>
+
+
+        <!--底部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="---- | ----"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/standard_text_size" />
+
+
+            <TextView
+                android:id="@+id/tvWindCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="---- | ----"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/standard_text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--折线图-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/mLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
