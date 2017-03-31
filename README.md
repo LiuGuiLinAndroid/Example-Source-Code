@@ -41,6 +41,11 @@
 
 >自定义的ViewPager轮播
 
+## 六.SqliteSample
+
+>sqlite的语句操作和原声API的示例代码
+
+
 #### QQ群：555974449
 
 ### [点击关注我的微博](http://weibo.com/Glorystys)
