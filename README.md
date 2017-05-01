@@ -45,6 +45,9 @@
 
 >sqlite的语句操作和原声API的示例代码
 
+## 七.UniversalAdapter
+
+>万能的适配器
 
 #### QQ群：555974449
 
